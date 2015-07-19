@@ -9,6 +9,8 @@
 ```r
 options(scipen=999)
 library(lubridate)
+# setwd("RepData_PeerAssessment1")
+unzip("activity.zip","activity.csv")
 activity <- read.csv(file = "activity.csv")
 activity$date <- ymd(activity$date)
 ```

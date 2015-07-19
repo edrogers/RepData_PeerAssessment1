@@ -69,6 +69,8 @@ img {
 <p><strong>Code to read in and process the data:</strong></p>
 <pre class="r"><code>options(scipen=999)
 library(lubridate)
+# setwd(&quot;RepData_PeerAssessment1&quot;)
+unzip(&quot;activity.zip&quot;,&quot;activity.csv&quot;)
 activity &lt;- read.csv(file = &quot;activity.csv&quot;)
 activity$date &lt;- ymd(activity$date)</code></pre>
 </div>
